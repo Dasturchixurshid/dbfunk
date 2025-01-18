@@ -1,0 +1,27 @@
+"""pyproject.toml""" 
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dbfunk"
+version = "0.1.0"
+description = "A library for managing SQLite database tables and data"
+authors = [
+    { name = "nxscoder", email = "dasturchixurshid@gmail.com" }
+]
+license = { text = "MIT" }
+dependencies = []
+
+# Optional: If you have specific classifiers, you can add them here
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+packages = ["dbfunk"]
